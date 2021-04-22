@@ -83,3 +83,11 @@ E
 aa-status
 ```
 
+
+## Enable Profile (set in enforced mode.)
+
+```
+apparmor_parser -q /etc/apparmor.d/usr.sbin.nginx
+```
+
+
