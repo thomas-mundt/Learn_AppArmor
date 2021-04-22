@@ -52,7 +52,9 @@ cd /etc/apparmor.d/
 rm bin.ping
 reboot now
 
-# better solution?
+# better solution
+ln -s /etc/apparmor.d/root.apparmor.myscript.sh /etc/apparmor.d/disable
+apparmor_parser -R /etc/apparmor.d/root.apparmor.myscript.sh
 ```
 
 
