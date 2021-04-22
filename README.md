@@ -93,3 +93,12 @@ apparmor_parser -q /etc/apparmor.d/usr.sbin.nginx
 ```
 
 
+## AppArmor in Kubernetes
+
+```
+annotations:
+  container.apparmor.security.beta.kubernetes.io/hello: localhost/k8s-apparmor-example-deny-write
+```
+
+
+Hint => A blocked pod status is a missing AppArmor profile refererenced in the pod definition file
